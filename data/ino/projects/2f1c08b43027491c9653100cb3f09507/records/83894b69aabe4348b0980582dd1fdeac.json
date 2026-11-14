@@ -1,0 +1,101 @@
+{
+  "format": "cansat-module-lab-records",
+  "records": [
+    {
+      "attachments": [
+        {
+          "bytes": 5627,
+          "name": "imu_bno055_sample.csv",
+          "sha256": "353a17aa5388958dfa8a5cae82570ab9ad5d60b2f4732b48460ffb0c8c9f75a2"
+        }
+      ],
+      "code_version": "demo-v15",
+      "created_at": "2026-11-14T14:51:04+09:00",
+      "expected": "CSVの読込・記録方法を試す",
+      "id": "83894b69aabe4348b0980582dd1fdeac",
+      "metrics": {
+        "v16": {
+          "board": "ESP32-S3（サンプル・実機未使用）",
+          "hardware": "BNO055（模擬データ）",
+          "log": {
+            "filename": "imu_bno055_sample.csv",
+            "issues": [
+              "基本チェックで欠損・時間異常・値域外は検出されませんでした（実機の正常性は保証しません）。"
+            ],
+            "rows": 160,
+            "sha256": "353a17aa5388958dfa8a5cae82570ab9ad5d60b2f4732b48460ffb0c8c9f75a2",
+            "signals": [
+              "accel_x_mps2",
+              "accel_y_mps2",
+              "accel_z_mps2",
+              "gyro_z_dps"
+            ],
+            "summary": {
+              "channels": [
+                {
+                  "count": 160,
+                  "maximum": 0.3442,
+                  "mean": 0.006099374999999999,
+                  "minimum": -0.3515,
+                  "missing": 0,
+                  "name": "accel_x_mps2",
+                  "unit": "m/s²"
+                },
+                {
+                  "count": 160,
+                  "maximum": 0.25,
+                  "mean": 0.001911249999999999,
+                  "minimum": -0.2499,
+                  "missing": 0,
+                  "name": "accel_y_mps2",
+                  "unit": "m/s²"
+                },
+                {
+                  "count": 160,
+                  "maximum": 10.0383,
+                  "mean": 9.807955625,
+                  "minimum": 9.5491,
+                  "missing": 0,
+                  "name": "accel_z_mps2",
+                  "unit": "m/s²"
+                },
+                {
+                  "count": 160,
+                  "maximum": 4.5295,
+                  "mean": 0.19126937500000002,
+                  "minimum": -1.7918,
+                  "missing": 0,
+                  "name": "gyro_z_dps",
+                  "unit": "°/s"
+                }
+              ],
+              "data_quality_notes": [
+                "基本チェックで欠損・時間異常・値域外は検出されませんでした（実機の正常性は保証しません）。"
+              ],
+              "duration": 7.95,
+              "encoding": "utf-8-sig",
+              "interpretation": "CSV品質確認のみ。異常候補は故障判定ではなく、測定・機体・コードの正常性を保証しません。",
+              "rows": 160,
+              "schema": "cansat-sensor-summary-v15",
+              "source_file": "imu_bno055_sample.csv",
+              "source_sha256": "353a17aa5388958dfa8a5cae82570ab9ad5d60b2f4732b48460ffb0c8c9f75a2",
+              "time_axis": "elapsed_seconds"
+            },
+            "time_kind": "ms"
+          },
+          "phase": "配線・通電確認",
+          "wiring": "サンプルのため配線なし"
+        }
+      },
+      "mode": "個別実験ノート（v16）",
+      "module": "IMU / BNO055",
+      "notes": "これは操作デモです。試験結果は未判定で保存してください。",
+      "observed": "模擬ログ（実機での成功ではない）",
+      "project_id": "2f1c08b43027491c9653100cb3f09507",
+      "scenario": "サンプル：BNO055静止・振動ログ（未検証）",
+      "status": "未判定",
+      "tester": "test"
+    }
+  ],
+  "version": 1
+}
